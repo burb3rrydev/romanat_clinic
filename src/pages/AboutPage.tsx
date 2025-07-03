@@ -1,4 +1,3 @@
-import React from 'react';
 import haftuPicture from '../assets/haftu_picture.jpg';
 
 export default function AboutPage() {

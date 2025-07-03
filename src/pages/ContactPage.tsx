@@ -23,12 +23,12 @@ export default function ContactPage() {
         message: formData.message,
       },
       'idwV1SF4wvm6egzPs'
-    ).then((result) => {
-      setStatus('✅ Your message was sent successfully. We’ll get back to you soon!');
-      setFormData({ name: '', email: '', message: '' }); // Clear the form
-    }).catch((error) => {
-      setStatus('❌ Failed to send your message. Please try again later.');
-    });
+    )  .then(() => {
+        setStatus('Message sent successfully!');
+      })
+      .catch(() => {
+        setStatus('Failed to send message. Please try again.');
+      });
   };
   
 
@@ -97,25 +97,25 @@ export default function ContactPage() {
                 />
               </Form.Group>
 
-              <Button
-                type="submit"
-                className="btn btn-maroon w-100 py-2 shadow-sm"
-                style={{
-                    backgroundColor: '#800000',
-                    border: 'none',
-                    color: 'white',
-                    transition: 'all 0.3s ease-in-out',
-                }}
-                onMouseOver={(e) => {
-                    (e.target as HTMLButtonElement).style.backgroundColor = '#a00000';
-                    (e.target as HTMLButtonElement).style.transform = 'scale(1.02)';
-                }}
-                onMouseOut={(e) => {
-                    (e.target as HTMLButtonElement).style.backgroundColor = '#800000';
-                    (e.target as HTMLButtonElement).style.transform = 'scale(1)';
-                }}
-                >
-                Submit
+                <Button
+                    type="submit"
+                    className="btn btn-maroon w-100 py-2 shadow-sm"
+                    style={{
+                        backgroundColor: '#800000',
+                        border: 'none',
+                        color: 'white',
+                        transition: 'all 0.3s ease-in-out',
+                    }}
+                    onMouseOver={(e) => {
+                        (e.target as HTMLButtonElement).style.backgroundColor = '#a00000';
+                        (e.target as HTMLButtonElement).style.transform = 'scale(1.02)';
+                    }}
+                    onMouseOut={(e) => {
+                        (e.target as HTMLButtonElement).style.backgroundColor = '#800000';
+                        (e.target as HTMLButtonElement).style.transform = 'scale(1)';
+                    }}
+                    >
+                    Submit
                 </Button>
 
             </Form>
