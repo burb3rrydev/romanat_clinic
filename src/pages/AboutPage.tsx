@@ -1,5 +1,6 @@
-import React, { useState, useEffect } from 'react';
 import haftuPicture from '../assets/haftu_picture.jpg';
+import { useState } from 'react';
+import { useEffect } from 'react';
 
 export default function AboutPage() {
   const [isMobile, setIsMobile] = useState(false);
