@@ -52,11 +52,12 @@ export default function ContactPage() {
               <a href="tel:+13033641422" className="text-maroon">303-364-1422</a>
             </p>
             <p><strong>Hours:</strong><br />
-              Monday – Friday: 9:00 AM – 5:30 PM <br></br>
+              Monday: 9:00 AM – 5:30 PM <br></br>
               Tuesday: 9:00 AM – 5:30 PM <br></br>
               Wednesday: 9:00 AM – 5:30 PM <br></br>
               Thursday: 9:00 AM – 5:30 PM <br></br>
-              Friday: 9:00 AM – 5:30 PM
+              Friday: 9:00 AM – 5:30 PM <br></br>
+              Saturday - Sunday: CLOSED
             </p>
           </div>
 

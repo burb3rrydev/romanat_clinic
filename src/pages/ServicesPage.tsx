@@ -58,7 +58,16 @@ export default function ServicesPage() {
     {
       title: "Routine Lab Services",
       description: "On-site blood work, urinalysis, and other diagnostics for quick and accurate results."
+    },
+    {
+      title: "Telemedicine",
+      description: "Virtual visits available for select medical concerns, follow-ups, and consultations from the comfort of your home."
+    },
+    {
+      title: "Pre-Op Physicals",
+      description: "Comprehensive medical evaluations required before surgical procedures to ensure patient readiness."
     }
+    
   ];
 
   return (
@@ -70,44 +79,6 @@ export default function ServicesPage() {
         </p>
 
         {/* Services */}
-        <section id="services" className="my-5">
-          <h2 className="text-center mb-4 text-maroon">Our Services</h2>
-          <div className="row g-4">
-            <div className="col-md-4">
-              <div className="card shadow-sm h-100">
-                <div className="card-body text-center">
-                  <i className="bi bi-heart-pulse-fill fs-1 text-maroon mb-3"></i>
-                  <h5 className="card-title">General Checkups</h5>
-                  <p className="card-text">
-                    Routine health exams and preventive care for all ages.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="col-md-4">
-              <div className="card shadow-sm h-100">
-                <div className="card-body text-center">
-                  <i className="bi bi-people-fill fs-1 text-maroon mb-3"></i>
-                  <h5 className="card-title">Family Care</h5>
-                  <p className="card-text">
-                    Personalized care tailored for your entire family.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="col-md-4">
-              <div className="card shadow-sm h-100">
-                <div className="card-body text-center">
-                  <i className="bi bi-thermometer-half fs-1 text-maroon mb-3"></i>
-                  <h5 className="card-title">Acute Illness</h5>
-                  <p className="card-text">
-                    Diagnosis and treatment for common illnesses and injuries.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
 
         <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
           {services.map((service, index) => (
