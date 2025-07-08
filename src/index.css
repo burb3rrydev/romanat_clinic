@@ -113,6 +113,27 @@ button:focus-visible {
   background-color: #a00000;
 }
 
+.menu-toggle-btn.navbar-toggler {
+  border: 2px solid white !important;
+  color: white !important;
+  padding: 6px 16px !important;
+  background-color: transparent !important;
+  font-weight: 500 !important;
+  font-size: 1rem !important;
+  transition: all 0.3s ease !important;
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.2) !important;
+}
+
+.menu-toggle-btn.navbar-toggler:hover,
+.menu-toggle-btn.navbar-toggler:focus {
+  background-color: white !important;
+  color: #800000 !important; /* maroon */
+  border-color: white !important;
+  text-decoration: none !important;
+}
+
+
+
 
 
 @media (prefers-color-scheme: light) {

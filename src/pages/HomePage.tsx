@@ -11,49 +11,33 @@ export default function HomePage() {
             Welcome to Romanat Clinic
           </h1>
           <p className="lead mb-4">
-            Compassionate family medicine for your health and wellness.
+            Compassionate family medicine for your health and wellness needs.
           </p>
         </section>
   
-        {/* Services */}
-        <section id="services" className="my-5">
-          <h2 className="text-center mb-4 text-maroon">Our Services</h2>
-          <div className="row g-4">
-            <div className="col-md-4">
-              <div className="card shadow-sm h-100">
-                <div className="card-body text-center">
-                  <i className="bi bi-heart-pulse-fill fs-1 text-maroon mb-3"></i>
-                  <h5 className="card-title">General Checkups</h5>
-                  <p className="card-text">
-                    Routine health exams and preventive care for all ages.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="col-md-4">
-              <div className="card shadow-sm h-100">
-                <div className="card-body text-center">
-                  <i className="bi bi-people-fill fs-1 text-maroon mb-3"></i>
-                  <h5 className="card-title">Family Care</h5>
-                  <p className="card-text">
-                    Personalized care tailored for your entire family.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="col-md-4">
-              <div className="card shadow-sm h-100">
-                <div className="card-body text-center">
-                  <i className="bi bi-thermometer-half fs-1 text-maroon mb-3"></i>
-                  <h5 className="card-title">Acute Illness</h5>
-                  <p className="card-text">
-                    Diagnosis and treatment for common illnesses and injuries.
-                  </p>
-                </div>
-              </div>
-            </div>
+
+
+              {/* Why Choose Us */}
+      <section className="my-5">
+        <h2 className="text-maroon text-center mb-4">Why Choose Romanat Clinic</h2>
+        <div className="row g-4">
+          <div className="col-md-4 text-center">
+            <i className="bi bi-heart-fill fs-1 text-maroon mb-2"></i>
+            <h5>Compassionate Care</h5>
+            <p>We treat every patient with kindness, dignity, and respect—like family.</p>
           </div>
-        </section>
+          <div className="col-md-4 text-center">
+            <i className="bi bi-person-check-fill fs-1 text-maroon mb-2"></i>
+            <h5>Experienced Team</h5>
+            <p>Led by Dr. Haftu Gebrehiwot, our skilled staff is dedicated to your health.</p>
+          </div>
+          <div className="col-md-4 text-center">
+            <i className="bi bi-clock-history fs-1 text-maroon mb-2"></i>
+            <h5>Convenient & Reliable</h5>
+            <p>We offer accessible care with flexible scheduling and trusted service.</p>
+          </div>
+        </div>
+      </section>
   
         {/* About Us */}
         <section className="my-5 p-4 bg-light rounded">
@@ -105,7 +89,7 @@ export default function HomePage() {
           <h2 className="text-maroon mb-3">Get in Touch</h2>
           <p>
             Call us at <a href="tel:+13033641422" className="text-maroon">+1 (303) 364-1422</a><br/>
-            Or visit us at 11275 E Mississippi Ave #2e2, Aurora, CO 80012
+            Or visit us at 11275 E Mississippi Ave #2E2, Aurora, CO 80012
           </p>
         </section>
       </div>

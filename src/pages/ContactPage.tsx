@@ -37,7 +37,7 @@ export default function ContactPage() {
       <Container className="px-4 px-md-5">
         <h1 className="text-center text-maroon mb-4">Contact Us</h1>
         <p className="text-center mb-5 lead">
-          We're here to answer your questions and provide quality care. Reach out today.
+          We're here to answer your questions and provide quality care. <br></br>Reach out today.
         </p>
 
         {/* Contact Info + Form */}
@@ -46,13 +46,17 @@ export default function ContactPage() {
           <div className="col-md-6">
             <h4 className="text-maroon mb-3">Clinic Information</h4>
             <p><strong>Address:</strong><br />
-              11275 E Mississippi Ave #2e2,<br />Aurora, CO 80012
+              11275 E Mississippi Ave #2E2,<br />Aurora, CO 80012
             </p>
             <p><strong>Phone:</strong><br />
               <a href="tel:+13033641422" className="text-maroon">303-364-1422</a>
             </p>
             <p><strong>Hours:</strong><br />
-              Monday – Friday: 9:00 AM – 5:30 PM
+              Monday – Friday: 9:00 AM – 5:30 PM <br></br>
+              Tuesday: 9:00 AM – 5:30 PM <br></br>
+              Wednesday: 9:00 AM – 5:30 PM <br></br>
+              Thursday: 9:00 AM – 5:30 PM <br></br>
+              Friday: 9:00 AM – 5:30 PM
             </p>
           </div>
 
@@ -64,7 +68,7 @@ export default function ContactPage() {
                 <Form.Label>Full Name</Form.Label>
                 <Form.Control 
                   type="text" 
-                  placeholder="Enter your name" 
+                  placeholder="Enter your full name" 
                   name="name"
                   value={formData.name}
                   onChange={handleChange}

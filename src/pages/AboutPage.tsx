@@ -1,91 +1,89 @@
+import React, { useState, useEffect } from 'react';
 import haftuPicture from '../assets/haftu_picture.jpg';
 
 export default function AboutPage() {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkMobile = () => setIsMobile(window.innerWidth < 768);
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
+
   return (
     <div className="container my-5 px-4 px-md-5">
-    <h1 className="text-maroon mb-4 text-center">Meet Our Medical Staff</h1>
+      <h1 className="text-maroon mb-4 text-center">Meet Our Medical Staff</h1>
 
-      {/* Staff Section */}
-      <section className="row g-4 mb-5 justify-content-center">
-        {/* Haftu Gebrehiwot */}
-        <div className="col-md-4 text-center">
+      {/* Haftu Gebrehiwot Section */}
+      <section
+        className="d-flex justify-content-center"
+        style={{
+          marginTop: '2rem',
+          marginBottom: isMobile ? '1.5rem' : '3rem', // reduce mb on mobile
+        }}
+      >
+        <div
+          className="d-flex flex-column flex-md-row align-items-center text-center text-md-start w-100 px-3"
+          style={{ maxWidth: 600 }}
+        >
           <img
             src={haftuPicture}
             alt="Haftu Gebrehiwot, M.D."
-            className="img-fluid rounded-circle mb-3 shadow"
-            style={{ width: '150px', height: '150px', objectFit: 'cover' }}
+            className="img-fluid rounded-circle shadow mb-3 mb-md-0"
+            style={{
+              width: '150px',
+              height: '150px',
+              objectFit: 'cover',
+              marginRight: '1.5rem',
+            }}
           />
-          <h5>Haftu Gebrehiwot, M.D., FAAFP</h5>
-          <p>Physician</p>
-        </div>
-
-        {/* Other Staff */}
-        <div className="col-md-4">
-          <h5>Medical Assistants:</h5>
-          <ul className="list-unstyled">
-            <li>Elssa Teame</li>
-            <li>Nicole Ortiz</li>
-          </ul>
-
-          <h5>Practice Manager:</h5>
-          <p>Belainesh Zedingel</p>
-
-          <h5>Billing Questions:</h5>
-          <p>
-            Clinic Service Corporation<br />
-            Phone: <a href="tel:3037552900">303-755-2900</a>
-          </p>
+          <div>
+            <h5 className="text-start text-md-left">Haftu Gebrehiwot, M.D., FAAFP</h5>
+            <p className="fw-bold mb-1 text-start text-md-start">Physician</p>
+            <p className="mb-0 text-start">
+              Board Certified, American Board of Family Medicine<br />
+              Civil Surgeon<br />
+              Certified Medical Examiner
+            </p>
+          </div>
         </div>
       </section>
 
-      {/* Why Choose Us */}
-<section className="my-5">
-  <h2 className="text-maroon text-center mb-4">Why Choose Romanat Clinic</h2>
-  <div className="row g-4">
-    <div className="col-md-4 text-center">
-      <i className="bi bi-heart-fill fs-1 text-maroon mb-2"></i>
-      <h5>Compassionate Care</h5>
-      <p>We treat every patient with kindness, dignity, and respect—like family.</p>
-    </div>
-    <div className="col-md-4 text-center">
-      <i className="bi bi-person-check-fill fs-1 text-maroon mb-2"></i>
-      <h5>Experienced Team</h5>
-      <p>Led by Dr. Haftu Gebrehiwot, our skilled staff is dedicated to your health.</p>
-    </div>
-    <div className="col-md-4 text-center">
-      <i className="bi bi-clock-history fs-1 text-maroon mb-2"></i>
-      <h5>Convenient & Reliable</h5>
-      <p>We offer accessible care with flexible scheduling and trusted service.</p>
-    </div>
-  </div>
-</section>
+      {/* Other Staff */}
+      <section className="mb-5">
+        <div
+          className="row justify-content-center gx-0 gx-md-5"
+          style={{ maxWidth: '700px', margin: '0 auto' }}
+        >
+          <div className="col-12 col-md-auto mb-3 mb-md-0" style={{ textAlign: 'left' }}>
+            <h5>Medical Assistants:</h5>
+            <ul className="list-unstyled mb-0">
+              <li className="fw-bold">Elssa Teame</li>
+              <li className="fw-bold">Nicole Ortiz</li>
+            </ul>
+          </div>
 
+          <div className="col-12 col-md-auto mb-3 mb-md-0" style={{ textAlign: 'left' }}>
+            <h5>Practice Manager:</h5>
+            <p className="mb-0 fw-bold">Belainesh Zedingel</p>
+          </div>
 
-      {/* Accepted Health Insurances */}
-<section className="p-4 bg-light rounded shadow-sm my-5">
-  <h2 className="text-maroon text-center mb-4">Accepted Health Insurances</h2>
-  <div className="row row-cols-2 row-cols-md-3 g-3 justify-content-center">
-  {[
-    "Aetna",
-    "Cigna",
-    "Cofinity",
-    "United Health Care",
-    "PHCS / MultiPlan",
-    "Blue Cross Blue Shield",
-    "First Health Network",
-    "Medicaid",
-  ].map((provider) => (
-    <div key={provider} className="col">
-      <div className="card h-100 text-center border-0 shadow-sm p-3">
-        <div className="card-body">
-          <p className="card-text fw-semibold">{provider}</p>
+          <div className="col-12 col-md-auto" style={{ textAlign: 'left' }}>
+            <h5>Billing Questions:</h5>
+            <p className="mb-0">
+              Clinic Service Corporation
+              <br />
+              Phone: <a href="tel:3037552900">303-755-2900</a>
+            </p>
+          </div>
         </div>
-      </div>
-    </div>
-  ))}
-</div>
+      </section>
 
-</section>
+
+
+
+
 
 
     </div>
