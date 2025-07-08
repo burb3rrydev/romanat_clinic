@@ -5,14 +5,14 @@ import nicolePicture from '../assets/nicole_picture.jpg';
 //import belaineshPicture from '../assets/belainesh_picture.jpg';
 
 export default function AboutPage() {
-  const [isMobile, setIsMobile] = useState(false);
+  /*const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
     const checkMobile = () => setIsMobile(window.innerWidth < 768);
     checkMobile();
     window.addEventListener('resize', checkMobile);
     return () => window.removeEventListener('resize', checkMobile);
-  }, []);
+  }, []);*/
 
   return (
     <div className="container my-5 px-4 px-md-5">
