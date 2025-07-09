@@ -9,7 +9,7 @@ export default function InsurancesPage() {
     "Blue Cross Blue Shield",
     "First Health Network",
     "Medicaid",
-    "And many others..."
+    "Medicare and others..."
   ];
 
   return (

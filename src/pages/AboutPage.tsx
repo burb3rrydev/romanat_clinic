@@ -2,7 +2,7 @@
 import haftuPicture from '../assets/haftu_picture.jpg';
 import elssaPicture from '../assets/elssa_picture.jpg';
 import nicolePicture from '../assets/nicole_picture.jpg';
-//import belaineshPicture from '../assets/belainesh_picture.jpg';
+import belaineshPicture from '../assets/belainesh_picture.jpg';
 
 export default function AboutPage() {
   /*const [isMobile, setIsMobile] = useState(false);
@@ -60,11 +60,11 @@ export default function AboutPage() {
             role: 'Medical Assistant',
             image: nicolePicture,
           },
-         /* {
+          {
             name: 'Belainesh Zedingel',
             role: 'Practice Manager',
             image: belaineshPicture,
-          },*/
+          },
         ].map((staff, index) => (
           <div key={index} className="col">
             <div className="card h-100 border-0 shadow text-center">
