@@ -46,6 +46,7 @@ export default function HomePage() {
             <img
               src={romanatImage}
               alt="Doctor with patient"
+              loading="eager"
               className="img-fluid rounded shadow"
             />
 

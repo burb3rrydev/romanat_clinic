@@ -27,6 +27,7 @@ export default function AboutPage() {
           <img
             src={haftuPicture}
             alt="Haftu Gebrehiwot, M.D."
+            loading="eager"
             className="img-fluid rounded-circle shadow mb-3 mb-md-0"
             style={{
               width: '150px',
@@ -71,6 +72,7 @@ export default function AboutPage() {
               <img
                 src={staff.image}
                 alt={staff.name}
+                loading="eager"
                 className="card-img-top rounded-circle mx-auto mt-4"
                 style={{
                   width: '120px',
