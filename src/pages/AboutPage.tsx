@@ -33,6 +33,7 @@ export default function AboutPage() {
               width: '150px',
               height: '150px',
               objectFit: 'cover',
+              objectPosition: 'center 20%',
               marginRight: '1.5rem',
             }}
           />
@@ -69,18 +70,20 @@ export default function AboutPage() {
         ].map((staff, index) => (
           <div key={index} className="col">
             <div className="card h-100 border-0 shadow text-center">
-              <img
+            <img
                 src={staff.image}
                 alt={staff.name}
                 loading="eager"
                 className="card-img-top rounded-circle mx-auto mt-4"
                 style={{
-                  width: '120px',
-                  height: '120px',
-                  objectFit: 'cover',
-                  border: '3px solid #800000',
+                    width: '120px',
+                    height: '120px',
+                    objectFit: 'cover',
+                    objectPosition: staff.name === 'Belainesh Zedingel' ? 'center 15%' : 'center',
+                    border: '3px solid #800000',
                 }}
-              />
+                />
+
               <div className="card-body">
                 <h5 className="card-title mb-1">{staff.name}</h5>
                 <p className="card-text text-muted">{staff.role}</p>

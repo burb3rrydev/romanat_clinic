@@ -134,6 +134,12 @@ button:focus-visible {
   text-decoration: none !important;
 }
 
+.footer-white {
+  background-color: white;
+  color: black;
+  border-top: 1px solid #dee2e6; /* subtle top border for separation */
+}
+
 
 
 

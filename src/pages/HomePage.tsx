@@ -29,7 +29,7 @@ export default function HomePage() {
           <div className="col-md-4 text-center">
             <i className="bi bi-person-check-fill fs-1 text-maroon mb-2"></i>
             <h5>Experienced Team</h5>
-            <p>Led by Dr. Haftu Gebrehiwot, our skilled staff is dedicated to your health.</p>
+            <p>Led by Dr. Haftu G, our skilled staff is dedicated to your health.</p>
           </div>
           <div className="col-md-4 text-center">
             <i className="bi bi-clock-history fs-1 text-maroon mb-2"></i>
